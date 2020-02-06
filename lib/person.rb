@@ -6,5 +6,5 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 def initialize(attributes=nil)
   if attributes
     attributes.each do |k,v|
-      self.send ("#{k}=")
+      self.send("#{k}=" ,v)
 end
